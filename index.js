@@ -25,7 +25,7 @@ const questions = () => {
     {
       type: "input",
       name: "Usage",
-      message: "What is the Usage of the project?",
+      message: "What is the Usage information of the project?",
     },
     {
       type: "list",
@@ -65,7 +65,7 @@ const questions = () => {
     {
       type: "input",
       name: "contributors",
-      message: "Who contribute to this project?",
+      message: "contribution guidelines to this project?",
     },
     {
       type: "input",

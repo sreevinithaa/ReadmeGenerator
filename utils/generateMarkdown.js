@@ -163,6 +163,7 @@ function renderMarkDown(data) {
 - [License](#license)
 - [Contributors](#contributors)
 - [Test](#tests)
+- [Questions](#questions)
   
  ## Installation
   
@@ -184,6 +185,9 @@ ${data.contributors}
   
 ${data.test}
 
+## Questions
+
+Contact me with any questions: [email](mailto:${data.GitHub_email}) , [GitHub](https://github.com/${data.GitHub_username}) 
 `;
 }
 module.exports = {
