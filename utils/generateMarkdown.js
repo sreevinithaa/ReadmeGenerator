@@ -1,10 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-    console.log(license);
+  //  console.log(license);
     let badge="";
   if (license) {
-    console.log(license);
+   // console.log(license);
    
     switch (license) {
       case "MIT":
@@ -118,7 +118,7 @@ function renderLicenseSection(license) {
       default:
         console.log("Score value is neither 10 or 20");
 
-console.log(badge);
+//console.log(badge);
         return badge;
     }
   } else {
@@ -127,6 +127,13 @@ console.log(badge);
   return badge;
 }
 
+
+function CheckUndefined(value) {
+  if (value === undefined) {
+    return '';
+  }
+  return value;
+}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -150,11 +157,11 @@ function renderLicenseBadge(license) {
 // TODO: Create a function to generate markdown for README
 function renderMarkDown(data) {
  
-  return  `# ${data.title}    ${renderLicenseBadge(data.license)}    
+  return  `# ${CheckUndefined(data.title)}    ${renderLicenseBadge(data.license)}    
  
   ## Description  
   
-    ${data.description}
+    ${CheckUndefined(data.description)}
      
   ## Table of Contents (Optional) 
     
@@ -167,27 +174,27 @@ function renderMarkDown(data) {
   
  ## Installation
   
- ${data.installation}
+ ${CheckUndefined(data.installation)}
   
 ## Usage
   
-${data.Usage}
+${CheckUndefined(data.Usage)}
     
 ## License
     
-This project is licensed under ${data.license}
+This project is licensed under ${CheckUndefined(data.license)}
      
 ## Contributors
 
-${data.contributors}
+${CheckUndefined(data.contributors)}
 
 ## Tests
   
-${data.test}
+${CheckUndefined(data.test)}
 
 ## Questions
 
-Contact me with any questions: [email](mailto:${data.GitHub_email}) , [GitHub](https://github.com/${data.GitHub_username}) 
+Contact me with any questions: [email](mailto:${CheckUndefined(data.GitHub_email)}) , [GitHub](https://github.com/${CheckUndefined(data.GitHub_username)}) 
 `;
 }
 module.exports = {

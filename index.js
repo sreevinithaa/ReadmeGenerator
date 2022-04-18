@@ -30,7 +30,7 @@ const questions = () => {
     {
       type: "list",
       name: "license",
-      message: "What is license?",
+      message: "Choose the license?",
       choices: [
         "MIT",
         "Boost 1.0",
@@ -65,7 +65,7 @@ const questions = () => {
     {
       type: "input",
       name: "contributors",
-      message: "contribution guidelines to this project?",
+      message: "Contribution guidelines to this project?",
     },
     {
       type: "input",
@@ -87,7 +87,7 @@ const questions = () => {
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     let content=rm.renderMarkDown(data);
-    console.log(content);
+   // console.log(content);
   fs.writeFileSync(fileName, content, "utf-8");
 }
 
@@ -96,7 +96,7 @@ function init() {
   questions()
     // Use writeFileSync method to use promises instead of a callback function
     .then((response) => writeToFile(__dirname + "/DS_Store/README.md", response))
-    .then(() => console.log("Successfully wrote to index.html"))
+    .then(() => console.log("Successfully wrote to Readme.md"))
     .catch((err) => console.error(err));
 }
 

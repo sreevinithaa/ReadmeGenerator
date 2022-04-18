@@ -13,7 +13,7 @@
 
 ## Description
 
-App can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+App can quickly and easily create a README file by using a command-line question to generate one. This allows the project creator to devote more time to working on the project.
 
 ## User Story
 ```
@@ -58,7 +58,9 @@ Run the following command at th root of your project and answer the prompted que
 [Vinitha Gowtheepan](https://github.com/sreevinithaa)
 
 ## Vedio of functionality
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions.](https://sreevinithaa.github.io/Weather_Dashboard/assets/img/screenshot.png)
+
+![Readme file generator gif link](./assets/vedio/Readme%20Generator_%20Apr%2018%2C%202022%206_46%20PM.gif)<br>
+The full movie file showing functionality of the application can be found [here](./assets/vedio/Readme%20Generator_%20Apr%2018%2C%202022%206_46%20PM.webm)
 
 
 ## Repository
@@ -69,4 +71,6 @@ You can get the code in the following link. https://github.com/sreevinithaa/Read
 ## Questions
 
 Contact me with any questions: [email](mailto:sreevinithaa@gmail.com) , [GitHub](https://github.com/sreevinithaa)<br />
+
+
 
