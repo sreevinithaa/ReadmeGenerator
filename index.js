@@ -95,7 +95,7 @@ function writeToFile(fileName, data) {
 function init() {
   questions()
     // Use writeFileSync method to use promises instead of a callback function
-    .then((response) => writeToFile(__dirname + "/DS_Store/README.md", response))
+    .then((response) => writeToFile(__dirname + "/assets/sample/README.md", response))
     .then(() => console.log("Successfully wrote to Readme.md"))
     .catch((err) => console.error(err));
 }
